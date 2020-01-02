@@ -1,25 +1,27 @@
-html {
+html,
+body,
+#cv {
   height: 100%;
+  overflow: auto;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
-  height: 100%;
   margin: 0px;
 }
 
 #cv {
   display: grid;
   grid-template-columns: 33% 67%;
-  grid-template-rows: 100%;
-  height: 100%;
+  /* grid-template-rows: 100%; */
 }
 
 section {
-  padding: 25px;
+  padding: 20px;
   grid-column-start: 1;
   grid-column-end: 2;
   background-color: #200681;
+  height: 100%;
 }
 
 section > * {
@@ -32,7 +34,7 @@ section > h3 {
 }
 
 main {
-  padding: 25px;
+  padding: 20px;
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -104,6 +106,11 @@ section > h3 > span {
   padding: 0 15px;
 }
 
+main > h4,
+main > p {
+  padding: 10px;
+}
+
 ul {
   list-style-type: none;
   padding: 0px;
@@ -127,6 +134,7 @@ ul {
 .highlight {
   background-color: #e1e1e1;
   display: inline-block;
+  padding: 0px 10px;
 }
 
 .highlightSection {
