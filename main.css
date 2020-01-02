@@ -48,11 +48,16 @@ h5 {
 }
 
 h1 {
-  margin: 2px;
+  margin: 10px 15px 0px 15px;
   font-size: 2em;
   border-bottom-style: solid;
   border-bottom-color: #de0870;
-  /* border-bottom-width: 8px; */
+  border-bottom-width: 5px;
+  color: #200681;
+  display: inline-block;
+  width: 90%;
+  flex-grow: 1;
+  /* margin: 0px auto; */
 }
 
 h3 {
@@ -99,10 +104,6 @@ section > h3 > span {
   padding: 0 15px;
 }
 
-h1 {
-  color: #200681;
-}
-
 ul {
   list-style-type: none;
   padding: 0px;
@@ -130,6 +131,23 @@ ul {
 
 .highlightSection {
   background-color: #160262;
+  display: inline-block;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#qrCode {
+  height: 50px;
+  border: 1px solid #de0870;
+  border-radius: 5px;
+  margin: 0px auto;
+  z-index: 1;
+  background-color: #fff;
   display: inline-block;
 }
 
