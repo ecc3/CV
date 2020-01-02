@@ -1,0 +1,139 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  height: 100%;
+  margin: 0px;
+}
+
+#cv {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  grid-template-rows: 100%;
+  height: 100%;
+}
+
+section {
+  padding: 25px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #200681;
+}
+
+section > * {
+  color: white;
+  text-align: center;
+}
+
+section > h3 {
+  color: #de0870;
+}
+
+main {
+  padding: 25px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+main > h3 {
+  color: #de7608;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+h1 {
+  margin: 2px;
+  font-size: 2em;
+  border-bottom-style: solid;
+  border-bottom-color: #de0870;
+  /* border-bottom-width: 8px; */
+}
+
+h3 {
+  position: relative;
+  z-index: 1;
+}
+
+h4,
+h5 {
+  margin: 10px 0px;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+h3::before {
+  content: "";
+  margin: 0 auto; /* this centers the line to the full width specified */
+  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+main > h3:before {
+  border-top: 2px solid #de7608;
+}
+
+section > h3:before {
+  border-top: 2px solid #de0870;
+}
+
+main > h3 > span {
+  background: #fff;
+  padding: 0 15px;
+}
+
+section > h3 > span {
+  background: #200681;
+  padding: 0 15px;
+}
+
+h1 {
+  color: #200681;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#libraries {
+  columns: 3;
+}
+
+#library1 {
+  margin-top: 0px;
+}
+
+.icons {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.highlight {
+  background-color: #e1e1e1;
+  display: inline-block;
+}
+
+.highlightSection {
+  background-color: #160262;
+  display: inline-block;
+}
+
+@media print {
+  body {
+  }
+}
