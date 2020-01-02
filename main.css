@@ -81,6 +81,11 @@ p {
   margin: 10px 0px;
 }
 
+main > p,
+.highlight > p {
+  text-align: justify;
+}
+
 h3::before {
   content: "";
   margin: 0 auto;
