@@ -46,6 +46,12 @@ main > h3 {
   color: #de7608;
 }
 
+main > h4,
+.job-header > h4,
+h5 {
+  color: #0c0050;
+}
+
 h3,
 h4,
 h5 {
@@ -74,7 +80,7 @@ h3 {
 
 h4,
 h5 {
-  margin: 10px 0px;
+  margin: 10px 0px 0px 0px;
 }
 
 p {
@@ -116,7 +122,7 @@ section > h3 > span {
   padding: 0 15px;
 }
 
-main > h4,
+.no-highlight,
 main > p {
   padding: 0px 10px;
 }
@@ -143,7 +149,7 @@ ul {
 
 .highlight {
   background-color: #de770815;
-  display: inline-block;
+  overflow: hidden;
   padding: 0px 10px;
   border-radius: 5px;
 }
@@ -165,7 +171,7 @@ header {
 
 #qrCode {
   height: 72px;
-  border: 1px solid #de7608;
+  border: 2px solid #de0870;
   border-radius: 5px;
   margin: 0px auto;
   z-index: 1;
@@ -173,11 +179,21 @@ header {
   display: inline-block;
 }
 
+.job-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dates {
+  margin: 10px 0px 0px 0px;
+  text-align: right;
+}
+
 @media print {
   html,
   body,
   #cv {
-    overflow: hidden;
+    overflow: visible;
   }
 
   h1 {
